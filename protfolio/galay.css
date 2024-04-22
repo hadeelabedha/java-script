@@ -1,0 +1,232 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6F6F6;
+}
+
+.container {
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(174, 145, 166);
+    padding-top: 55px;
+    padding-bottom: 150px;
+}
+
+.container h1 {
+    color: rgb(196, 131, 184);
+    font-size: 36px;
+    padding: 5px;
+    border-radius: 5px;
+    font-family: heebo;
+    font-weight: 900;
+    text-align: center;
+    font-style: italic;
+    box-shadow: 10px 5px 10px 5px #3a4857;
+    background-color: #d4d6e1;
+}
+
+.container p {
+    color: rgb(188, 230, 230);
+    font-size: 28px;
+    font-weight: 400;
+    font-family: heebo;
+    text-align: center;
+    max-width: 90%;
+    margin-top: 20px;
+}
+
+.container .grid-gallary {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin-top: 50px;
+    background-color: rgb(133, 93, 113);
+    padding: 20px;
+}
+
+.container .grid-gallary .uniq {
+    grid-column: 2;
+}
+
+.container .grid-gallary .flex-item {
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1607843137);
+}
+
+.container .grid-gallary .flex-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+}
+
+.container .grid-gallary .flex-item .name-project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: color-mix(in srgb, #d4d6e1 100%, rgb(153, 140, 160) 20%);
+}
+
+.container .grid-gallary .flex-item .name-project h1 {
+    font-size: 32px;
+    color: black;
+    font-family: heebo;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.container .grid-gallary .flex-item p {
+    font-size: 18px;
+    font-family: heebo;
+    font-weight: 400;
+    color: #143d31;
+    width: 352px;
+    margin-bottom: 50px;
+}
+
+.container .grid-gallary .flex-item .icon {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    gap: 10px;
+}
+
+.container .grid-gallary .flex-item .icon img {
+    width: 30px;
+    height: 30px;
+}
+
+.container .grid-gallary .flex-item button {
+    background: #121112;
+    border-radius: 7px;
+    width: 150px;
+    height: 40px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .grid-gallary .flex-item button a {
+    color: #e095e0;
+    font-size: 15px;
+    font-family: heebo;
+    font-weight: 500;
+    text-align: center;
+}
+
+.container .grid-gallary .flex-item button:hover {
+    box-shadow: 0 0 30px #396b5b;
+}
+
+.container .grid-gallary .flex-item button:hover a {
+    font-weight: 700;
+}
+
+@media screen and (max-width: 650px) {
+    .container {
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container h1 {
+        font-size: 25px;
+        font-family: heebo;
+        font-weight: 900;
+        text-align: center;
+    }
+
+    .container p {
+        color: #3a3a3a;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: heebo;
+        text-align: center;
+        margin-top: 20px;
+        max-width: 90%;
+    }
+
+    .container .grid-gallary {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+    .container .grid-gallary .uniq {
+        grid-column: 1;
+    }
+
+    .container .grid-gallary .flex-item {
+        display: flex;
+        flex-direction: column;
+        border-radius: 10px;
+        box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.1607843137);
+    }
+
+    .container .grid-gallary .flex-item img {
+        width: 100%;
+        height: 223px;
+        border-radius: 10px;
+    }
+
+    .container .grid-gallary .flex-item .name-project {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .container .grid-gallary .flex-item .name-project h2 {
+        font-size: 23px;
+        color: #3a3a3a;
+        font-family: heebo;
+        font-weight: 500;
+    }
+
+    .container .grid-gallary .flex-item p {
+        font-size: 16px;
+        font-family: heebo;
+        font-weight: 400;
+        color: #3a3a3a;
+        width: 352px;
+        margin-bottom: 50px;
+    }
+
+    .container .grid-gallary .flex-item .icon {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        gap: 10px;
+    }
+
+    .container .grid-gallary .flex-item .icon img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .container .grid-gallary .flex-item button {
+        background: #516d6e;
+        border-radius: 15px;
+        width: 150px;
+        height: 30px;
+    }
+
+    .container .grid-gallary .flex-item button a {
+        color: #201e20;
+        font-size: 14px;
+        font-family: heebo;
+        font-weight: 500;
+    }
+}
